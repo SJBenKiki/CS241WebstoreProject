@@ -1,0 +1,68 @@
+﻿<%@ Master Language="VB" CodeFile="MasterPage.master.vb" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Salerno Celestial Imaging</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="Styles/Main.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="wrapper">
+        <header>
+        <h1>
+            <a href="Home.aspx"><img src="Images/SalernoLogo.jpg" height="120" 
+                alt="Salerno Celestial Imaging"></a>
+        </h1>
+        <div id="menubar">
+            <asp:Menu ID="Menu1" runat="server" DataSourceID="SiteMapDataSource1" 
+                Orientation="Horizontal" StaticEnableDefaultPopOutImage="False" 
+                StaticSubMenuIndent="10px">
+                <StaticHoverStyle ForeColor="Blue" />
+                <StaticMenuItemStyle HorizontalPadding="15" />
+                <StaticSelectedStyle ForeColor="Blue"/>
+            </asp:Menu>
+        </div>
+        <p class="thinline">
+        </p>
+    </header>
+        <div id="content">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <p class="thinline">
+        </p>
+        <h2>
+            Browse by Category:
+        </h2>
+        <div class="hyperlinks">
+            <asp:HyperLink ID="HyperLinkAnimals" runat="server" NavigateUrl="~/Products.aspx?cat=3"
+                ImageUrl="~/Images/Products/beast.jpg" CssClass="hyperlinks" BorderColor="Black"
+                BorderStyle="Double" BorderWidth="20px">Animals</asp:HyperLink>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:HyperLink ID="HyperLinkPeople" runat="server" NavigateUrl="~/Products.aspx?cat=1"
+                CssClass="hyperlinks" BorderColor="Black" BorderStyle="Double" BorderWidth="20px"
+                ImageUrl="~/Images/Products/emotion.jpg">People</asp:HyperLink>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:HyperLink ID="HyperLinkPhotography" runat="server" NavigateUrl="~/Products.aspx?cat=2"
+                ImageUrl="~/Images/Products/flowerflame.jpg" CssClass="hyperlinks" BorderColor="Black"
+                BorderStyle="Double" BorderWidth="20">Photography</asp:HyperLink>
+            <p class="animals">
+                Animals</p>
+            <p class="people">
+                People</p>
+            <p class="photography">
+                Photography</p>
+        </div>
+        <footer>
+        <p class="thinline">
+        </p>
+            <p id="map">
+                <asp:SiteMapPath ID="SiteMapPath1" runat="server"></asp:SiteMapPath>
+            </p>
+        </footer>
+        <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" ShowStartingNode="False" />
+    </div>
+    </form>
+</body>
+</html>

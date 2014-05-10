@@ -1,0 +1,88 @@
+﻿.table
+{
+    width: 449px;
+}
+.th1
+{
+    width: 132px;
+}
+.label1
+{
+    width: 104px;
+    font-style: italic;
+    margin-bottom: 3px;
+}
+.lblBackBill
+{
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 3px;
+}
+.lblpayment
+{
+    width: 251px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 55px;
+}
+.entry
+{
+    margin-top: 0;
+    margin-bottom: 5px;
+    width: 390px;
+    margin-left: 0px;
+    height: 37px;
+}
+.lstCartType
+{
+    margin-left: 100px;
+}
+.ddPackingMaterials
+{
+    margin-left: 100px;
+}
+.RdbShippingOptions
+{
+    margin-left: 50px;
+}
+#buttons
+{
+    
+    margin-top: 0px;
+    margin-left: 32px;
+    width: 868px;
+    margin-bottom: 0px;
+}
+.btnAccept, .btnCancel, .btnContinue
+{
+    font-size: medium;
+    font-family: 'Charter Web' , Georgia, serif;
+    font-size: 24px;
+    color: #FFFFFF;
+    background-color: #000000;
+}
+.txtCardNumber
+{
+    margin-left: 55px;
+}
+
+.ddlMonth
+{
+        margin-left: 55px;
+}
+
+.entry2
+{
+    margin-left: 259px;
+    margin-top: -40px;
+}
+.entry3
+{
+    margin-left: 315px;
+    margin-top: -50px;
+}
+.entry4
+{
+    margin-top: -40px;
+    margin-left: 315px;
+}
